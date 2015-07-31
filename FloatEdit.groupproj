@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6076fe02-1567-4d89-a10d-99d84972a149}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FloatEditTests">
+    <MSBuild Projects="tests\FloatEditTests.dproj" Targets="" />
+  </Target>
+  <Target Name="FloatEditTests:Clean">
+    <MSBuild Projects="tests\FloatEditTests.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FloatEditTests:Make">
+    <MSBuild Projects="tests\FloatEditTests.dproj" Targets="Make" />
+  </Target>
+  <Target Name="FloatEdit">
+    <MSBuild Projects="src\FloatEdit.dproj" Targets="" />
+  </Target>
+  <Target Name="FloatEdit:Clean">
+    <MSBuild Projects="src\FloatEdit.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FloatEdit:Make">
+    <MSBuild Projects="src\FloatEdit.dproj" Targets="Make" />
+  </Target>
+  <Target Name="FloatEditDemo">
+    <MSBuild Projects="demo\FloatEditDemo.dproj" Targets="" />
+  </Target>
+  <Target Name="FloatEditDemo:Clean">
+    <MSBuild Projects="demo\FloatEditDemo.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FloatEditDemo:Make">
+    <MSBuild Projects="demo\FloatEditDemo.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FloatEditTests;FloatEdit;FloatEditDemo" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="FloatEditTests:Clean;FloatEdit:Clean;FloatEditDemo:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="FloatEditTests:Make;FloatEdit:Make;FloatEditDemo:Make" />
+  </Target>
+</Project>

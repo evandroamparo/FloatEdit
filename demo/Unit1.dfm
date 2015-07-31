@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = Edit1
+  Caption = 'Form1'
+  ClientHeight = 242
+  ClientWidth = 472
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Edit1: TEdit
+    Left = 40
+    Top = 40
+    Width = 145
+    Height = 21
+    BiDiMode = bdRightToLeft
+    ParentBiDiMode = False
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 40
+    Top = 67
+    Width = 145
+    Height = 21
+    BiDiMode = bdRightToLeft
+    ParentBiDiMode = False
+    TabOrder = 1
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 40
+    Top = 94
+    Width = 145
+    Height = 21
+    BiDiMode = bdRightToLeft
+    ParentBiDiMode = False
+    TabOrder = 2
+    Text = 'Edit3'
+  end
+  object Edit4: TEdit
+    Left = 40
+    Top = 121
+    Width = 145
+    Height = 21
+    BiDiMode = bdRightToLeft
+    ParentBiDiMode = False
+    TabOrder = 3
+    Text = 'Edit4'
+  end
+end
